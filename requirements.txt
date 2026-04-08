@@ -1,0 +1,5 @@
+install_requires=[
+    'flask',
+    'requests',
+    'colorama', # Adicione isso aqui!
+],
