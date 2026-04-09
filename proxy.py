@@ -7,7 +7,6 @@ import argparse
 import colorama
 from colorama import Fore, Style
 
-
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
 
@@ -27,7 +26,7 @@ def proxy(path):
     print(Fore.CYAN + f"[{indice + 1}/10] " + Fore.YELLOW + f"Saltando via: {alvo}")
     try:
         resposta = requests.get(f"{alvo}/{path}", timeout=3)
-        return (resposta.content, resposta.status_code, list(resposta.headers.items()))
+        return (resposta.content, response.status_code, list(resposta.headers.items()))
     except:
         return "Erro no nó", 502
 
@@ -36,8 +35,7 @@ def main():
     parser.add_argument("--port", type=int, default=8080)
     args = parser.parse_args()
 
-    
-banner = r"""
+    banner = r"""
                   -`
                   .o+`
                  `ooo/
@@ -61,12 +59,11 @@ banner = r"""
     
     os.system('clear')
     print(Fore.LIGHTRED_EX + banner)
-    print(Fore.GREEN + f" [+] GhostHop v2.4 | {len(SERVIDORES)} nós ativos")
+    print(Fore.GREEN + f" [+] GhostHop v2.5 | {len(SERVIDORES)} nós ativos")
     print(Fore.RED + " [+] Dev: FOREVER")
-    print("-" * 45)
+    print("-" * 55)
     print(Fore.CYAN + f" [*] Escutando na porta: {args.port}")
 
-   
     app.run(port=args.port, threaded=True, debug=False, use_reloader=False)
 
 if __name__ == '__main__':
