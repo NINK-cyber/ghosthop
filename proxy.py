@@ -37,32 +37,26 @@ def main():
     args = parser.parse_args()
 
     
-    banner = r"""
-          _   _
-         | | | |
-  __ _ _ __  __| | | |
- / _` | '_ \/ _` | | |
-| (_| | | | | (_| | |_|
- \__,_|_| |_|\__,_| (_)
-
-          .o+`
-         `ooo/
-        `+oooo:
-       `+oooooo:
-      -+oooooo+:
-     `/: -:++oooo+:
-    `/++++/+++++++:
-   `/+++++++++++++++:
-  `/+++oooooooooooooo/`
- ./ooossssso++ossssssso+`
-.oossssso-````/ossssss+`
--ossssso.      :ssssssso.
-:osssssss/      osssso+++.
-/osssssss/      +ssssooo/-
-`/ossssso+/: -   -: /+osssso+-
- `+sso+:-`          `.-/+oso:
-  `++: .                   `-/+
-   `.
+banner = r"""
+                  -`
+                  .o+`
+                 `ooo/
+                `+oooo:
+               `+oooooo:
+               -+oooooo+:
+             `/:-:++oooo+:
+            `/++++/+++++++:
+           `/++++++++++++++:
+          `/+++ooooooooooooo/`
+         ./ooosssso++osssssso+`
+        .oossssso-````/ossssss+`
+       -osssssso.      :ssssssso.
+      :osssssss/        osssso+++.
+     /ossssssss/        +ssssooo/-
+   `/ossssso+/:-        -:/+osssso+-
+  `+sso+:-`                 `.-/+oso:
+ `++:.                           `-/+/
+ .`                                 `/
     """
     
     os.system('clear')
